@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  PreviewView for camera preview  -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewCam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--  OverlayView for drawing landmarks  -->
+    <com.ooplab.exercises_fitfuel.OverlayView
+        android:id="@+id/overlayView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <!--  TextViews for count and stage  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:layout_gravity="top|center_horizontal">
+        <TextView android:id="@+id/countTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reps: 0" android:textSize="24sp" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/stageTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stage: None" android:textSize="24sp" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/angle1TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Angle1: 0" android:textSize="24sp" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/angle2TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Angle2: None" android:textSize="24sp" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/angle3TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Angle3: 0" android:textSize="24sp" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/angle4TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Angle2: None" android:textSize="24sp" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</FrameLayout>
